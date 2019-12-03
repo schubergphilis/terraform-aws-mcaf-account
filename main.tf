@@ -36,7 +36,7 @@ provider "aws" {
 module "okta" {
   providers  = { aws = aws.inception }
   source     = "github.com/schubergphilis/terraform-aws-mcaf-okta?ref=v0.1.3"
-  name       = "CBPlatformAdmin"
+  name       = var.okta_role_name
   account_id = data.aws_caller_identity.current.account_id
   metadata   = var.metadata
   tags       = var.tags
