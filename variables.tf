@@ -22,13 +22,13 @@ variable "provisioned_product_name" {
 variable "sso_firstname" {
   type        = string
   default     = "AWS Control Tower"
-  description = "The firstname of the Control Tower SSO account"
+  description = "The first name of the Control Tower SSO account"
 }
 
 variable "sso_lastname" {
   type        = string
   default     = "Admin"
-  description = "The lastname of the Control Tower SSO account"
+  description = "The last name of the Control Tower SSO account"
 }
 
 variable "sso_email" {
