@@ -1,5 +1,3 @@
-data "aws_caller_identity" "current" {}
-
 resource "mcaf_o365_alias" "default" {
   alias = var.email
 
