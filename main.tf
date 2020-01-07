@@ -24,20 +24,3 @@ resource "mcaf_aws_account" "default" {
     prevent_destroy = true
   }
 }
-
-provider "aws" {
-  alias  = "inception"
-  region = var.region
-  assume_role {
-    role_arn = "arn:aws:iam::${mcaf_aws_account.default.account_id}:role/AWSControlTowerExecution"
-  }
-}
-
-module "okta" {
-  providers  = { aws = aws.inception }
-  source     = "github.com/schubergphilis/terraform-aws-mcaf-okta?ref=v0.1.3"
-  name       = var.okta_role_name
-  account_id = data.aws_caller_identity.current.account_id
-  metadata   = var.metadata
-  tags       = var.tags
-}
