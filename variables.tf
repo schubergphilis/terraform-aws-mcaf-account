@@ -3,6 +3,12 @@ variable "account" {
   description = "The name of the account"
 }
 
+variable "create_email_address" {
+  type        = bool
+  default     = true
+  description = "Controls the creation of the O365 email address"
+}
+
 variable "email" {
   type        = string
   description = "Email address of the account"
