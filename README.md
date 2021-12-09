@@ -8,12 +8,13 @@ MCAF terraform module to create an AWS account using Control Tower's Account Fac
 | Name | Version |
 |------|---------|
 | terraform | >= 0.13 |
+| mcaf | >= 0.3 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| mcaf | n/a |
+| mcaf | >= 0.3 |
 
 ## Inputs
 
