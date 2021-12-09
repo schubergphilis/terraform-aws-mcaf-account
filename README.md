@@ -8,12 +8,13 @@ MCAF terraform module to create an AWS account using Control Tower's Account Fac
 | Name | Version |
 |------|---------|
 | terraform | >= 0.13 |
+| mcaf | >= 0.3 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| mcaf | n/a |
+| mcaf | >= 0.3 |
 
 ## Inputs
 
@@ -23,7 +24,6 @@ MCAF terraform module to create an AWS account using Control Tower's Account Fac
 | email | Email address of the account | `string` | n/a | yes |
 | organizational\_unit | Organization unit to create the account in | `string` | n/a | yes |
 | sso\_email | The email address of the Control Tower SSO account | `string` | n/a | yes |
-| create\_email\_address | Controls the creation of the O365 email address | `bool` | `true` | no |
 | provisioned\_product\_name | A custom name for the provisioned product | `string` | `null` | no |
 | sso\_firstname | The first name of the Control Tower SSO account | `string` | `"AWS Control Tower"` | no |
 | sso\_lastname | The last name of the Control Tower SSO account | `string` | `"Admin"` | no |
