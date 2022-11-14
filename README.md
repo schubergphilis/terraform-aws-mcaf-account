@@ -1,6 +1,6 @@
 # terraform-aws-mcaf-account
 
-MCAF terraform module to create an AWS account using Control Tower's Account Factory
+MCAF terraform module to create an AWS account using Control Tower's Account Factory.
 
 <!--- BEGIN_TF_DOCS --->
 ## Requirements

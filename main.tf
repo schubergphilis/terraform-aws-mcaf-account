@@ -1,7 +1,7 @@
 resource "mcaf_aws_account" "default" {
   name                     = var.account
   email                    = var.email
-  organizational_unit      = var.organizational_unit
+  organizational_unit_path = var.organizational_unit
   provisioned_product_name = var.provisioned_product_name
 
   sso {
